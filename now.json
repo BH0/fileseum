@@ -1,0 +1,36 @@
+{
+    "version": 2,
+    "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+    "routes": [
+      {
+        "src": "/upload",
+        "dest": "/index.js",
+        "methods": ["GET"]
+      },
+      {
+        "src": "/upload",
+        "dest": "/index.js",
+        "methods": ["POST"]
+      }, 
+      {
+        "src": "/image", 
+        "dest": "/index.js", 
+        "methods": ["GET"]
+      }, 
+      {
+        "src": "/video", 
+        "dest": "/index.js", 
+        "methods": ["GET"]
+      }, 
+      {
+        "src": "/text", 
+        "dest": "/index.js", 
+        "methods": ["GET"]
+      }, 
+      {
+        "src": "/audio", 
+        "dest": "/index.js", 
+        "methods": ["GET"]
+      }
+    ]
+  }
